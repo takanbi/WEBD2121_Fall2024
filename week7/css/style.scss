@@ -1,0 +1,109 @@
+$skyBlue: #2699FB;
+$white: #FFF;
+$gray: #7f7f7f;
+$monserrat: "Monserrat", sans-serif;
+$roboto: "Roboto", sans-serif;
+$lightBlue: #bce0fd;
+$largeParaType: Georgia, "Times New Roman", Times, serif; 
+$largeParaSize: 40px;
+$veryLightBlue: #f1f9ff;
+$mediumText: 0.75em;
+$verySmallText: 0.65em;
+$mediumLineHeight: 2em;
+$gridMin: 1024px;
+$gridMax: 1366px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $monserrat;
+}
+.container {
+    width: 100%;
+    nav {
+        background-color: $skyBlue;
+        height: 94px;
+        display: flex;
+        align-items: center;
+        padding: 0 $mediumLineHeight;
+        section {
+            color: $white;
+        }
+        #menu {
+            margin-left: auto;
+            width: 40px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .menu-span {
+                height: 0.25em;
+                background-color: $white;
+                width: 100%;
+            }
+        }
+        #desktop-nav {
+            display: none;
+            color: $white;
+            list-style: none;
+            li {
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: flex;
+    }
+    #mobile-nav {
+        transition: all 200ms linear;
+       height: calc(100vh - 94px); 
+       background-color: $skyBlue;
+    //    display: flex;
+       justify-content: center;
+       align-items: center;
+       #mobile-nav-ul {
+        margin-top: -15em;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        // background-color: black;
+        list-style: none;
+        li {
+            color: $white;
+            a {
+                text-decoration: none;
+                color: inherit;
+                text-transform: uppercase;
+            }
+        }
+       }
+    }
+}
+@media screen and (min-width: $gridMin) {
+    .container {
+        height: 100vh;
+        nav {
+            #menu {
+                display: none;
+            }
+            #desktop-nav {
+                display: flex;
+                margin-left: auto;
+                li {
+                    padding: 0.5em;
+                }
+            }
+        }
+        #mobile-nav {
+            display: none;
+        }
+    }
+}
