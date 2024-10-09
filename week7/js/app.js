@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)
 let menu = $("#menu");
 let mobileNav = $("#mobile-nav");
   mobileNav.addClass("hide");
@@ -16,4 +18,5 @@ let mobileNav = $("#mobile-nav");
         isShow = false;
     }
   }
+});
   });
