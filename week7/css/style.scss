@@ -131,7 +131,7 @@ $Arial: Arial, Helvetica, sans-serif;
   }
   #section2 {
     #section2-child {
-        background-color: $veryLightBlue;
+      background-color: $veryLightBlue;
       #section-left {
         padding: 2em;
         h1 {
@@ -327,7 +327,7 @@ $Arial: Arial, Helvetica, sans-serif;
   }
 }
 
-  @media screen and (min-width: $gridMin) {
+@media screen and (min-width: $gridMin) {
   .container {
     height: 100vh;
     nav {
@@ -353,79 +353,104 @@ $Arial: Arial, Helvetica, sans-serif;
     // }
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1024px){
-    section#section1 {
-        width: 70%;
-        margin: 0 auto;
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  section#section1 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  section#section-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .container section#section2 section#section2-child section#section-right {
+    padding: 0;
+    margin: 0 auto;
+    // min-width: $gridMin;
+    // max-width: $gridMax;
+    // min-height: $gridMin;
+    // max-height: $gridMax;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0px;
+    grid-template-areas:
+      "one two three"
+      "four five six"
+      "seven seven six";
+    img {
+      padding: 0;
+      width: 100%;
+      height: 100%;
     }
-    section#section-left {
-        width: 80%;
-        margin: 0 auto;
+    img:nth-child(1) {
+      grid-area: one;
     }
-    .container section#section2 section#section2-child section#section-right {
-        padding: 0;
-        margin: 0 auto;
-        // min-width: $gridMin;
-        // max-width: $gridMax;
-        // min-height: $gridMin;
-        // max-height: $gridMax;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        // grid-template-columns: 1fr 1fr 1fr;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 0px;
-        grid-template-areas:
-        "one two three"
-        "four five six"
-        "seven seven six";
-        img {
-            padding: 0;
-            width: 100%;
-            height: 100%;
-        }
-        img:nth-child(1) {
-            grid-area: one;
-        }
-        img:nth-child(2) {
-            grid-area: two;
-        }
-        img:nth-child(3) {
-            grid-area: three;
-        }
-        img:nth-child(4) {
-            grid-area: four;
-        }
-        img:nth-child(5) {
-            grid-area: five;
-        }
-        img:nth-child(6) {
-            grid-area: six;
-        }
-        img:nth-child(7) {
-            grid-area: seven;
-        }
+    img:nth-child(2) {
+      grid-area: two;
     }
-    section#cards {
-        width: 90%;
-        margin: 3em auto;
-        display: grid;
-        grid-template-columns: 50% 50%; 
+    img:nth-child(3) {
+      grid-area: three;
     }
-    div#section-five-div {
-     p {
-        width: 60%;
-     }
+    img:nth-child(4) {
+      grid-area: four;
+    }
+    img:nth-child(5) {
+      grid-area: five;
+    }
+    img:nth-child(6) {
+      grid-area: six;
+    }
+    img:nth-child(7) {
+      grid-area: seven;
+    }
+  }
+  section#cards {
+    width: 90%;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  div#section-five-div {
+    p {
+      width: 60%;
+    }
+  }
+  .container
+    section#section-five
+    div#section-five-div
+    div#section-five-div-div {
+    flex-direction: row;
+    .section-five-div-div-section {
+      padding: 1.5em;
+    }
+    .section-five-div-div-section:nth-child(2) {
+      margin: 0 1em;
+    }
+  }
+}
 
+@media screen and (min-width: 1024px) {
+  .container {
+    div#section-five-div {
+      display: flex;
+      width: 50%;
+      margin: 0 auto;
+      section {
+        width: 50%;
+        h1, #section-five-div-p1, #section-five-div-p2 {
+          margin-bottom: 0;
+        }
+      }
+      div#section-five-div-div {
+        width: 50%;
+        justify-content: space-evenly;
+      }
     }
-    .container section#section-five div#section-five-div div#section-five-div-div {
-        flex-direction: row;
-       .section-five-div-div-section {
-        padding: 1.5em;
-       } 
-       .section-five-div-div-section:nth-child(2) {
-        margin: 0 1em;
-       }
-     }
+  }
+  .container #section-five #section-five-div h1, .container #section-five #section-five-div p#section-five-div-p1,.container #section-five #section-five-div #section-five-div-p2 {
+    margin-bottom: 0;
+  }
 }

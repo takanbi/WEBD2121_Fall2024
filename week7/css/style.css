@@ -384,4 +384,24 @@
   .container section#section-five div#section-five-div div#section-five-div-div .section-five-div-div-section:nth-child(2) {
     margin: 0 1em;
   }
+}
+@media screen and (min-width: 1024px) {
+  .container div#section-five-div {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .container div#section-five-div section {
+    width: 50%;
+  }
+  .container div#section-five-div section h1, .container div#section-five-div section #section-five-div-p1, .container div#section-five-div section #section-five-div-p2 {
+    margin-bottom: 0;
+  }
+  .container div#section-five-div div#section-five-div-div {
+    width: 50%;
+    justify-content: space-evenly;
+  }
+  .container #section-five #section-five-div h1, .container #section-five #section-five-div p#section-five-div-p1, .container #section-five #section-five-div #section-five-div-p2 {
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
