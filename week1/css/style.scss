@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  h1.orbitron-font {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 6em;
+    color: #FFF;
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+  }
+}
+@media screen and (max-width: 1024px) {
+  #container {
+    background-color: #3eecac;
+    background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+    h1.orbitron-font {
+        font-weight: 800;
+        font-style: normal;
+        font-size: 4.5em;
+        color: #FFF;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #container {
+    background-color: #fa8bff;
+    background-image: linear-gradient(
+      45deg,
+      #fa8bff 0%,
+      #2bd2ff 52%,
+      #2bff88 90%
+    );
+    h1.orbitron-font {
+        font-weight: 600;
+        font-style: normal;
+        font-size: 3em;
+        color: #F00;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  #container {
+    background-color: #fbda61;
+    background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+    h1.orbitron-font {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+        color: #000;
+    }
+  }
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900

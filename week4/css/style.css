@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+}
+#container nav {
+  height: 80px;
+  background-color: darkblue;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+#container nav h1 {
+  color: #fff;
+}
+#container nav ul#navigation {
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+}
+#container nav ul#navigation li.nav-links {
+  color: #fff;
+}
+#container nav ul#navigation .nav-links {
+  font-family: "Roboto", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0.25rem;
+}
+#container main {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+#container main section {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  margin: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+#container main .roboto-black {
+  font-family: "Roboto", system-ui;
+  font-weight: 900;
+  font-style: normal;
+}/*# sourceMappingURL=style.css.map */
