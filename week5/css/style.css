@@ -2,79 +2,95 @@
   padding: 0;
   margin: 0;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .roboto-thin {
   font-family: "Roboto", system-ui;
   font-weight: 100;
-  font-style: normal; }
+  font-style: normal;
+}
 
 .roboto-light {
   font-family: "Roboto", system-ui;
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+}
 
 .roboto-regular {
   font-family: "Roboto", system-ui;
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+}
 
 .roboto-medium {
   font-family: "Roboto", system-ui;
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+}
 
 .roboto-bold {
   font-family: "Roboto", system-ui;
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+}
 
 .roboto-black {
   font-family: "Roboto", system-ui;
   font-weight: 900;
-  font-style: normal; }
+  font-style: normal;
+}
 
 .roboto-thin-italic {
   font-family: "Roboto", system-ui;
   font-weight: 100;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .roboto-light-italic {
   font-family: "Roboto", system-ui;
   font-weight: 300;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .roboto-regular-italic {
   font-family: "Roboto", system-ui;
   font-weight: 400;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .roboto-medium-italic {
   font-family: "Roboto", system-ui;
   font-weight: 500;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .roboto-bold-italic {
   font-family: "Roboto", system-ui;
   font-weight: 700;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .roboto-black-italic {
   font-family: "Roboto", system-ui;
   font-weight: 900;
-  font-style: italic; }
+  font-style: italic;
+}
 
 /* Color Theme Swatches in Hex */
 @font-face {
   font-family: space-age;
-  src: url("../fonts/space age.ttf"); }
+  src: url("../fonts/space age.ttf");
+}
 :root {
-  --space-age: space-age; }
+  --space-age: space-age;
+}
 
 h1 {
   font-family: var(--space-age);
   color: #0a4273;
-  font-size: 3em; }
+  font-size: 3em;
+}
 
 #container {
   background-color: #0a4273;
@@ -89,44 +105,54 @@ h1 {
   justify-content: center;
   -webkit-align-items: center;
   -moz-box-align: center;
-  align-items: center; }
-  #container #container-section {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1em; }
-    #container #container-section section {
-      background-color: #63a5bf;
-      padding: 1em;
-      border-radius: 1em;
-      box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.3); }
-      #container #container-section section h3 {
-        font-family: var(--space-age);
-        color: #d9d5c5;
-        font-size: 3em;
-        margin-bottom: 0.25em; }
-      #container #container-section section img {
-        width: 100%;
-        height: auto;
-        -webkit-filter: sepia(200%);
-        filter: sepia(200%);
-        cursor: pointer;
-        transition: all linear 250ms; }
-      #container #container-section section img:hover {
-        -webkit-filter: sepia(0%);
-        filter: sepia(0%); }
-      #container #container-section section p {
-        color: #d9d5c5;
-        margin-top: 1em; }
+  align-items: center;
+}
+#container #container-section {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+}
+#container #container-section section {
+  background-color: #63a5bf;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.3);
+}
+#container #container-section section h3 {
+  font-family: var(--space-age);
+  color: #d9d5c5;
+  font-size: 3em;
+  margin-bottom: 0.25em;
+}
+#container #container-section section img {
+  width: 100%;
+  height: auto;
+  -webkit-filter: sepia(200%);
+  filter: sepia(200%);
+  cursor: pointer;
+  transition: all linear 250ms;
+}
+#container #container-section section img:hover {
+  -webkit-filter: sepia(0%);
+  filter: sepia(0%);
+}
+#container #container-section section p {
+  color: #d9d5c5;
+  margin-top: 1em;
+}
 
 @media screen and (max-width: 480px) {
   #container {
-    display: block; }
-    #container #container-section {
-      display: -webkit-flex;
-      display: -moz-box;
-      display: flex;
-      -webkit-flex-direction: column;
-      -moz-box-orient: vertical;
-      -moz-box-direction: normal;
-      flex-direction: column; } }
+    display: block;
+  }
+  #container #container-section {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -720,6 +720,48 @@ $gridMax: 1366px;
         }
       }
     }
-
+    footer#footer {
+      padding: 2em;
+      height: 170px;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+      grid-template-rows: 1fr 0 0 1fr;
+      gap: 0;
+      grid-template-areas: 
+      "AAA BBB CCC DDD EEE"
+      "FFF BBB CCC DDD EEE"
+      "FFF BBB CCC DDD EEE"
+      "GGG HHH III JJJ KKK";
+      h1 {
+        grid-area: AAA;
+      }
+      p {
+        grid-area: DDD;
+      }
+      form {
+        grid-area: DDD;
+        margin-top: 2em;
+      }
+      section {
+        margin: 0;
+        display: flex;
+        ul:first-child {
+          grid-area: BBB;
+          width: 50%;
+        }
+        ul:last-child {
+          grid-area: CCC;
+          width: 50%;
+          margin-left: 6em;
+        }
+      }
+      address {
+        grid-area: EEE;
+      }
+      span#footer-copy {
+        grid-area: GGG;
+        margin: 0;
+      }
+    }
   }
 }
